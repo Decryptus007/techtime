@@ -34,15 +34,25 @@ This will start a local server and open the built app in your default browser.
 
 ## Docker
 
-This app also comes with a Dockerfile that can be used to build and run the app in a container. To build the Docker image, run the following command:
+To run the app in a Docker container, you need to have Docker installed on your machine. If you're on Linux, you may need to grant permission to Docker by prepending sudo to your Docker commands.
+
+### macOS
+
+If you're using macOS, you can install Docker Desktop to run Docker containers. Once you have Docker Desktop installed, you can build and run the Docker container using the following commands:
 
 `docker build -t techtime .`
-
-This will build the Docker image with the tag `techtime`. To run the app in a Docker container, run the following command:
-
 `docker run -p 5173:5173 techtime`
 
-This will start a Docker container with the app running on port `5173`.
+### Windows
+If you're using Windows, you can install Docker Desktop to run Docker containers. Once you have Docker Desktop installed, you can build and run the Docker container using the following commands:
+
+`docker build -t techtime .`
+`docker run -p 5173:5173 techtime`
+
+Note that if you're using PowerShell, you may need to use the & operator to run the Docker commands:
+
+`& docker build -t techtime .`
+`& docker run -p 5173:5173 techtime`
 
 ## Dependencies
 
