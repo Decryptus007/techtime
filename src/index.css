@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/clash-display');
+
+@font-face {
+  font-family: 'Amazing Kids';
+  src: url('./assets/fonts/Amazing Kids.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: #F8F9FC;
+  }
+
+  h1 {
+    font-family: 'Clash Display', sans-serif;
+    @apply text-white font-bold text-[32px] leading-[46px] capitalize text-center lg:text-start lg:text-[62px] lg:leading-[82px];
+  }
+
+  h2 {
+    font-family: 'Clash Display', sans-serif;
+    @apply text-customDarkGray font-bold text-[24px] leading-[36px] capitalize text-center lg:text-start lg:text-[56px] lg:leading-[70px];
+  }
+
+  h4 {
+    font-family: 'Clash Display', sans-serif;
+    @apply font-semibold text-white text-[24px] leading-[30px] capitalize lg:text-[32px] lg:leading-[39px];
+  }
+
+  h6 {
+    font-family: 'Clash Display', sans-serif;
+    @apply text-white font-bold text-[16px] leading-[20px] capitalize text-center lg:text-[24px] lg:leading-[30px];
+  }
+
+  p {
+    @apply text-customLightGray font-[500] text-[8px] leading-[15px] capitalize text-center lg:text-start lg:text-[16px] lg:leading-[26px];
+  }
+
+  span {
+    @apply text-[#A1A1A1] font-[500] text-[8px] leading-[15px] capitalize text-center lg:text-start lg:text-[16px] lg:leading-[28px];
+  }
+}
+
+@layer components {
+  .header-text {
+    @apply capitalize text-white text-[19.1615px] leading-[19px] lg:text-[47px] lg:leading-[47px];
+    font-family: 'Amazing Kids', sans-serif;
+  }
+
+  .nav-links {
+    @apply text-white font-[500] leading-[16px] text-[16px] lg:leading-[22px];
+  }
+
+  .nav-links.active {
+    @apply font-bold;
+  }
+
+  .btn-white {
+    @apply py-2 px-4 min-h-[27px] rounded-[2.23324px] bg-white text-primary font-bold capitalize text-[8px] leading-[11px] lg:py-4 lg:px-8 lg:rounded-[4px] lg:text-[16px] lg:leading-[22px] lg:min-h-[54px];
+  }
+
+  .btn-primary {
+    @apply py-2 px-4 min-h-[27px] rounded-[2.23324px] border border-white bg-primary text-[8px] text-white font-bold capitalize leading-[11px] lg:py-4 lg:px-8 lg:rounded-[4px] lg:text-[16px] lg:leading-[22px] lg:min-h-[54px];
+  }
+
+  .btn-classes {
+    @apply h-[33.59px] bg-white py-2 pl-4 pr-8 flex items-center gap-2 rounded-[4px] capitalize font-bold text-[8px] text-customDarkGray leading-[11px] lg:text-[16px] lg:leading-[22px] lg:py-[20px] lg:pl-6 lg:pr-[56px] lg:gap-4 lg:h-[72px] lg:rounded-lg;
+  }
+
+  .why-card {
+    @apply w-[48%] rounded-[4px] py-6 px-4 bg-white flex flex-col gap-2 h-auto lg:gap-6 lg:py-8 lg:px-6;
+  }
+
+  .why-card img {
+    @apply w-8 h-8 lg:w-12 lg:h-12;
+  }
+
+  .why-card b {
+    @apply font-bold capitalize text-black text-[12px] leading-4 lg:text-base lg:leading-[22px];
+  }
+
+  .why-card span {
+    @apply text-[#A2A2A2] leading-4 text-start lg:leading-[28px] lg:text-[12px];
+  }
+
+  .btn-filter {
+    @apply bg-white py-1 px-2 h-[19px] min-w-[69px] capitalize text-[8px] font-bold leading-[11px] text-[#A1A1A1] lg:text-[16px] lg:leading-[22px] lg:py-3 lg:px-4 lg:h-[46px] lg:min-w-[137px];
+  }
+
+  .btn-filter.active {
+    @apply text-primary;
+  }
+
+  .courses-card {
+    @apply bg-white min-h-[234px] rounded-[4px] py-[15.6px] px-[8px] w-[48%] lg:w-[32%] lg:py-4 lg:px-[20px] lg:rounded-[16px] lg:min-h-[576px];
+  }
+
+  .courses-card .tag {
+    background: rgba(30, 93, 206, 0.2);
+    @apply py-[2px] px-[8px] h-[9px] rounded-[6.44px] text-primary flex items-center capitalize text-[6px] leading-[5px] font-bold lg:h-6 lg:py-2 lg:px-[20px] lg:rounded-2xl lg:text-[12px] lg:leading-[16px];
+  }
+
+  .courses-card .rating {
+    @apply rounded-[6.44px] flex items-center gap-2 capitalize text-[6px] text-[#A1A1A1] leading-[5px] font-bold lg:text-[12px] lg:leading-[16px];
+  }
+
+  .courses-card .thumbnail {
+    @apply w-4 h-4 lg:w-10 lg:h-10;
+  }
+
+  .courses-card .price {
+    font-family: 'Clash Display', sans-serif;
+    @apply text-primary text-[8px] font-semibold leading-[10px] capitalize lg:text-[20px] lg:leading-[25px];
+  }
+
+  footer .link {
+    @apply text-white text-[16px] leading-[22px] capitalize lg:text-[24px] lg:leading-[32px];
+  }
+}
+
+/* Custom Stylings */
+@media (min-width: 1341px) and (max-width: 1440px) {
+  .hero-img {
+    margin-bottom: -1rem !important;
+  }
+}
+
+@media (min-width: 1221px) and (max-width: 1340px) {
+  .hero-img {
+    margin-bottom: -2rem !important;
+  }
+}
+
+@media (min-width: 1115px) and (max-width: 1220px) {
+  .hero-img {
+    margin-bottom: -4rem !important;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1114px) {
+  .hero-img {
+    margin-bottom: -6rem !important;
+  }
+}
