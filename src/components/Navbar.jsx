@@ -13,7 +13,7 @@ function Navbar() {
   }, [openNavbar]);
 
   return (
-    <nav className={`sticky top-0 left-0 z-40 h-[87px] bg-primary flex items-center lg:h-[150px]`}>
+    <nav className={`h-[87px] bg-primary flex items-center lg:h-[150px]`}>
       <Container>
         <div className="relative flex justify-between">
           <a href="/" className='header-text'>Tech Time</a>
